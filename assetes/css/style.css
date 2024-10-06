@@ -1,0 +1,157 @@
+/* colors variables */
+:root{
+  --white-bg:#FFFFFF;
+  --black-bg:#000000;
+  --white-text:#FFFFFF;
+  --black-text:#000000;
+  --orange-text:#FD6F00;
+  --blog-bg:#F8F8F8;
+  --gray-text:#424242;
+}
+
+/* comon css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white-bg);
+    font-weight: 400;
+    color: var(--black-text);
+    letter-spacing: 3%;
+    font-size: 21px;
+}
+body.dark{
+    background-color: var(--black-bg);
+    color: var(--white-text);
+}
+a{
+    text-decoration: none;
+    color: var(--black-text);
+}
+.dark a{
+    color: var(--white-text);
+}
+li{
+    list-style: none;
+}
+.primery-btn{
+    min-width: 188px;
+    padding: 18px;
+    background-color: var(--orange-text);
+    color: var(--white-text);
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.container{
+    width: 1420px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.title-desc{
+    font-size: 21px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 932px;
+}
+
+.theme-change{
+    width: 50px;
+    height: 50px;
+    background-color: #FD6F00;
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    cursor: pointer;
+}
+
+/* header css */
+header{
+    margin-top: 60px;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+}
+.logo img{
+    width: 279px;
+}
+.logo-dark{
+    display: none;
+}
+.dark .logo-dark{
+    display: block;
+}
+.dark .logo-white{
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 12px;
+}
+nav ul li a{
+    font-size: 21px;
+    padding: 10px 14px;
+}
+
+/* Hero Section */
+
+.hero-section{
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.hero-content h6{
+    font-size: 24px;
+    font-weight: 600;
+}
+.hero-content h5{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--orange-text);
+}
+.hero-content h1{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120%;
+}
+.hero-content span{
+    display: block;
+    text-align: right;
+}
+.hero-content p{
+    margin-top: 28px;
+    margin-bottom: 22px;
+}
+.hero-img{
+    text-align: center;
+}
+.hero-icon{
+    margin-top: 36px;
+}
+.hero-icon ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
