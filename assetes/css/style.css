@@ -40,7 +40,7 @@ li{
 }
 .primery-btn{
     min-width: 188px;
-    padding: 18px;
+    padding: 16px;
     background-color: var(--orange-text);
     color: var(--white-text);
     border: none;
@@ -91,22 +91,13 @@ header{
     width: 279px;
 }
 .logo-dark{
-    display: none;
+    display: none ; !important
 }
 .dark .logo-dark{
     display: block;
 }
 .dark .logo-white{
     display: none;
-}
-.dark .hero-icon ul li a{
-    background-color: var(--white-bg);
-    overflow: hidden;
-    display: block;
-    aspect-ratio: 3/3;
-    max-width: fit-content;
-    padding: 10px;
-    border-radius: 5px;
 }
 nav ul{
     display: flex;
@@ -165,6 +156,15 @@ nav ul li a{
     justify-content: center;
     gap: 25px;
     align-items: center;
+}
+.dark .hero-icon ul li a{
+    background-color: var(--white-bg);
+    overflow: hidden;
+    display: block;
+    aspect-ratio: 3/3;
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
 }
 /* About section  */
 .about-section{
@@ -349,7 +349,80 @@ nav ul li a{
     font-weight: 500;
     margin: 12px 0px;
 }
+.dark .testimonial-content h5{
+    color: var(--black-text);
+}
 .testimonial-content h6{
     font-size: 19px;
     font-weight: 400;
+}
+.dark .testimonial-content h6{
+    color: var(--black-text);
+}
+/* contact section */
+.contact-section{
+    padding: 70px 0px;
+}
+
+.contact-form form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 70px 0px;
+}
+.contact-form input[type="text"]{
+    padding: 22px 0px 22px 26px;
+    width: 627px;
+    outline: none;
+    border: none;
+    background-color: var(--deep-gray);
+    border-radius: 14px;
+}
+/* Footer */
+footer {
+    background-color: var(--deep-gray);
+    padding-top: 100px; 
+}
+.dark footer{
+    background-color: var(--black-bg);
+}
+.footer-logo img{
+    width: 242px;
+    display: block;
+    margin: 0 auto;
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 51px 0px 80px 0px;
+}
+.footer-nav ul li a{
+    padding: 10px 14px;
+}
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 62px;
+}
+.dark .footer-social ul li a{
+    background-color: var(--white-bg);
+    overflow: hidden;
+    display: block;
+    aspect-ratio: 3/3;
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+.copyright p{
+    padding: 26px 0px;
+    background-color: var(--gray-text);
+    text-align: center;
+    color: var(--white-text);
+}
+.copyright a{
+    color: #E86C0A;
 }
